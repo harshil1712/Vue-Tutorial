@@ -10,7 +10,9 @@
 	<div id="vue-app">
 		<h1>{{greet()}}</h1>
 		<h2>{{name}}</h2>
-		<a :href="link">Link</a>
+		<a :href="link">Link</a><br>
+		<input type="text" :value='name'>
+		<p v-html='linkHTML'></p>
 	</div>
 	<script src="app.js"></script>
 </body>
