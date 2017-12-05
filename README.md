@@ -3,7 +3,7 @@
 ## Installing Vue
 There are various methods to install vue in your project. Here I am using CDN.
 
-`<script src="https://cdn.jsdelivr.net/npm/vue"></script>`
+`<script src="https://unpkg.com/vue"></script>`
 
 ## Vue Instance
 To create a vue instance copy and paste `new Vue({})` in the app.js file. All the vue.js components will be written within this instance.
@@ -39,3 +39,11 @@ Example `<p v-html='key'><p>`
 ### Method
 Methods are the function that we call like `{{methodName()}}`.
 Like javascript functions we can pass parameters to the methods.
+
+## Events
+Different events like click, double click, mouse hover etc. can be used in two ways. Either use `v-on:eventName` or `@eventName`.
+Example `<button @eventName='funcName(args)'>Loreum ipsum</button>`
+```
+click : @click or v-on:click
+double click : @dblclick or v-on:dblclick
+```

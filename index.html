@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>Vue Tutorial</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="https://unpkg.com/vue"></script>
 </head>
 <body>
 	<div id="vue-app">
@@ -13,6 +13,12 @@
 		<a :href="link">Link</a><br>
 		<input type="text" :value='name'>
 		<p v-html='linkHTML'></p>
+		<button @click='add(1)'>Add one year</button>
+		<button @click='sub(1)'>Sub one year</button>
+		<button @dblclick='add(10)'>Add 10 years</button>
+		<button @dblclick='sub(10)'>Sub 10 years</button>
+		<p>{{age}}</p>
+		<div id="canvas" @mousemove='position'>{{x}},{{y}}</div>
 	</div>
 	<script src="app.js"></script>
 </body>
