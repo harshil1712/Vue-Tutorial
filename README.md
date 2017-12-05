@@ -29,6 +29,10 @@ We can directly call the data from the app.js file into the DOM.
 To dispaly a string `<h1>{{dataKey}}</h1>`.
 Instead of `h1` tag other header tags, and even `p` tag can be used.
 
+### Data Binding
+To bind the data to the attributes of a tag use `v-bind:attributName`. For example to add a soucre link in the `a` tag
+`<a v-bind:href='link'>Loreum Ipsum</a>`. We can also use `:href` instead of `v-bind:href`.
+
 ### Method
 Methods are the function that we call like `{{methodName()}}`.
 Like javascript functions we can pass parameters to the methods.
