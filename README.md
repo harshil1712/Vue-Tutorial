@@ -46,4 +46,5 @@ Example `<button @eventName='funcName(args)'>Loreum ipsum</button>`
 ```
 click : @click or v-on:click
 double click : @dblclick or v-on:dblclick
+mouse hover : @mousemove or v-on:mousemove
 ```
